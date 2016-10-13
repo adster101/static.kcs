@@ -1,0 +1,39 @@
+.hero {
+  position: relative;
+}
+
+.hero__image {
+
+}
+
+.hero__content {
+
+  background-color: rgba(0,0,0,1);
+
+  @include media-query(lap-and-up) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+
+}
+
+.hero__title {
+  color: $color-white;
+  font-weight: 700;
+  margin:0;
+  @include media-query(palm) {
+    @include inuit-font-size(24px);
+  }
+}
+
+.homepage-intro {
+  background-color: $color-brand;
+  color:$color-white;
+  a {
+    color:$color-white;
+    font-weight:bold;
+  }
+}

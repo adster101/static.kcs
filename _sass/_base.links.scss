@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+a {
+    text-decoration: none;
+    color: $color-brand;
+
+    @include attention() {
+        text-decoration: underline;
+    }
+}
+
+.sidebar__link {
+  display:block;
+  text-decoration:none;
+  color: $color-gray;
+
+}

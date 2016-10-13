@@ -1,0 +1,81 @@
+/*------------------------------------*\
+    #TYPE
+\*------------------------------------*/
+/**
+ * Typographical base selectors.
+ */
+/**
+ * Headings 1–6.
+ */
+@include headings() {
+  font-weight: 400;
+  letter-spacing: -1px;
+  letter-spacing: -.0625rem;
+  color: $color-black;
+}
+/**
+ * A generic inverted heading style which can be applied to any headings.
+ */
+.block-heading {
+  margin: 0;
+  padding: quarter($inuit-base-spacing-unit) quarter($inuit-base-spacing-unit) quarter($inuit-base-spacing-unit) $inuit-base-spacing-unit--small;
+  @include inuit-font-size(16px);
+  color: #fff;
+  @include media-query(lap-and-up) {
+    //padding-left: $inuit-base-spacing-unit;
+    padding-top: $inuit-base-spacing-unit--small;
+    padding-bottom: $inuit-base-spacing-unit--small;
+    @include inuit-font-size(18px);
+  }
+}
+.block-heading--small, .small {
+  @include inuit-font-size(14px);
+}
+/* Utility to hide stuff on small screen */
+.hidden-palm {
+  @include media-query(palm) {
+    display: none;
+  }
+}
+
+blockquote {
+  border-left: 6px solid $color-gray;
+  padding-left: 24px;
+}
+
+figcaption {
+  @include inuit-font-size(12px,1rem);
+  padding: $inuit-base-spacing-unit--small;
+  background: $color-gray;
+
+}
+
+.tagline {
+  background-color: #fff;
+  padding: $inuit-base-spacing-unit--small;
+}
+.green {
+  color: $color-green;
+}
+.purple {
+  color: $color-purple;
+}
+.white {
+  color: $color-white;
+}
+.heading {}
+strong {
+  color: $color-black;
+}
+
+label {
+  font-weight: 700;
+}
+
+input, textarea, select{
+  border: 1px solid $color-black;
+  padding: $inuit-base-spacing-unit--small;
+  margin-bottom: $inuit-base-spacing-unit;
+  width: 100%;
+
+}

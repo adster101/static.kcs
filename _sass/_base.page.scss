@@ -1,0 +1,37 @@
+html {
+}
+
+body {
+  position: relative;
+  font-family: Helvetica,Arial,freesans,sans-serif;
+}
+
+.no-scroll {
+  height:100%;
+  overflow:hidden;
+}
+
+.pink-bg {
+  background-color: $brand-color;
+}
+
+.green-bg {
+  background-color: $color-green;
+}
+
+.purple-bg {
+  background-color: $color-purple;
+}
+
+.grey-bg {
+  background-color: $color-gray;
+}
+
+ul.pricing > li {
+  border-bottom: dotted 1px;
+}
+
+ul.pricing > li > span {
+  float: right;
+  font-weight: 700;
+}

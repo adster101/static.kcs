@@ -1,0 +1,11 @@
+
+.btn--menu {
+  background-color: transparent;
+  border-color: $color-gray;
+  color:inherit;
+  @include attention() {
+    //background-color: $color-blue;
+    //  border-color: $color-blue;
+    color: inherit;
+  }
+}

@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    #WRAPPERS
+\*------------------------------------*/
+
+html {
+
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: $color-white;
+
+    @include media-query(desk) {
+      //padding: $inuit-base-spacing-unit;
+    }
+}
+
+
+.page-wrap {
+  position:absolute;
+  width:100%;
+  transition: left 0.3s ease;
+  left:0;
+}

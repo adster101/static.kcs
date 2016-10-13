@@ -1,0 +1,11 @@
+/*
+ * Pretty icons
+ * 1. Parent item needs to be position: relative for this to work
+ */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  fill: $color-brand;
+  vertical-align: middle;
+}

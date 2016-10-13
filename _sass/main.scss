@@ -1,0 +1,96 @@
+---
+# This is the Front Matter block
+---
+// Settings: Global variables, site-wide settings, config switches, etc.
+// Tools: Site-wide mixins and functions.
+// Generic: Low-specificity, far-reaching rulesets (e.g. resets).
+// Base: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+// Objects: Objects, abstractions, and design patterns (e.g. .media {}).
+// Components: Discrete, complete chunks of UI (e.g. .carousel {}). This is the one layer that inuitcss doesn’t get involved with.
+// Trumps: High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
+/**
+ * Settings
+ */
+@import "../bower_components/inuit-defaults/settings.defaults";
+@import "settings.global";
+@import "settings.colours";
+@import "../bower_components/inuit-responsive-settings/settings.responsive";
+/**
+ * Tools
+ */
+@import "../bower_components/inuit-functions/tools.functions";
+@import "../bower_components/inuit-mixins/tools.mixins";
+@import "tools.mixins";
+@import "../bower_components/inuit-responsive-tools/tools.responsive";
+@import "../bower_components/inuit-tools-widths/tools.widths";
+/**
+ * Generic
+ */
+@import "../bower_components/inuit-normalize/generic.normalize";
+@import "../bower_components/inuit-box-sizing/generic.box-sizing";
+/**
+ * Base
+ */
+@import "../bower_components/inuit-page/base.page";
+@import "base.page";
+@import "../bower_components/inuit-headings/base.headings";
+@import "base.type";
+@import "base.links";
+@import "../bower_components/inuit-lists/base.lists";
+@import "../bower_components/inuit-images/base.images";
+@import "../bower_components/inuit-paragraphs/base.paragraphs";
+/**
+ * Objects
+ */
+@import "objects.wrappers";
+@import "../bower_components/inuit-buttons/objects.buttons";
+$inuit-enable-layout--rev: true;
+$inuit-enable-layout--small: true;
+@import "../bower_components/inuit-layout/objects.layout";
+@import "../bower_components/inuit-box/objects.box";
+$inuit-enable-media--small: true;
+$inuit-enable-media--responsive: true;
+@import "../bower_components/inuit-media/objects.media";
+
+$inuit-enable-block--small: true;
+$inuit-enable-block--flush: true;
+$inuit-enable-block--right: true;
+@import "../bower_components/inuit-block/objects.block";
+@import "../bower_components/inuit-flag/objects.flag";
+@import "objects.panels";
+/**
+ * Components
+ */
+@import "components.trending";
+@import "components.page-head";
+@import "components.site-nav";
+@import "components.secondary-nav";
+@import "components.offcanvas-nav";
+@import "components.block";
+@import "components.media";
+@import "components.layout";
+@import "components.icons";
+@import "components.category-grid";
+@import "components.footer";
+@import "components.banner";
+@import "components.brick";
+@import "components.responsive-embed";
+@import "components.hero";
+
+/**
+ * Trumps
+ */
+@import "../bower_components/inuit-clearfix/trumps.clearfix";
+@import "../bower_components/inuit-spacing/trumps.spacing";
+$inuit-enable-responsive-margins--none: true;
+$inuit-enable-responsive-paddings--none: true;
+$inuit-enable-responsive-paddings: true;
+$inuit-enable-responsive-paddings--tiny: true;
+$inuit-enable-responsive-paddings--small: true;
+$inuit-enable-responsive-margins: true;
+$inuit-enable-responsive-margins--tiny: true;
+$inuit-enable-responsive-margins--small: true;
+@import "../bower_components/inuit-spacing-responsive/trumps.spacing-responsive";
+$inuit-use-fractions: false;
+@import "../bower_components/inuit-widths/trumps.widths";
+@import "../bower_components/inuit-widths-responsive/trumps.widths-responsive";

@@ -1,0 +1,11 @@
+.list-inline--breadcrumbs {
+
+  > li + li {
+
+      &:before {
+          content: "#{$inuit-list-inline-breadcrumb-character}";
+      }
+
+  }
+
+}

@@ -1,0 +1,152 @@
+/*------------------------------------*\
+    #SITE-NAV
+\*------------------------------------*/
+.logo {
+  position:relative;
+}
+
+.logo__img {
+  position:absolute;
+  left:72px;
+  top: 0;
+  height: 60px;
+
+  @include media-query(lap) {
+    left:96px;
+    height:60px;
+    top:0px;
+  }
+
+  @include media-query(desk) {
+    left:110px;
+    height:72px;
+    top:-6px;
+  }
+}
+
+.sitename {
+
+  font-weight: bold;
+  display:inline-block;
+  color: $color-black;
+
+
+  @include inuit-font-size(16px, 2);
+
+  @include media-query(lap) {
+    @include inuit-font-size(20px, 1.5);
+  }
+
+  @include media-query(desk) {
+    @include inuit-font-size(24px, 1.5);
+  }
+
+}
+
+
+header nav {
+
+  @include media-query(lap-and-up) {
+    float:right;
+  }
+
+}
+
+.site-nav__link {
+  @include inuit-font-size(12px);
+  @include media-query(lap) {
+    @include inuit-font-size(14px);
+  }
+  @include media-query(desk) {
+    @include inuit-font-size(16px);
+  }
+
+  display:none;
+  color: $color-black;
+  padding: $inuit-base-spacing-unit--small $inuit-base-spacing-unit--small 8px ;
+  border-bottom:4px solid transparent;
+  @include media-query(lap-and-up) {
+    display: inline-block;
+  }
+
+  &:hover, &:active,  {
+    text-decoration: none;
+    border-bottom:3px solid $color-brand;
+  }
+}
+
+.site-nav__link--active {
+  text-decoration: none;
+  border-bottom:3px solid $color-brand;
+}
+
+.contact {
+  color: $color-black;
+  a {
+    &:hover {
+      text-decoration:none;
+    }
+  }
+}
+
+.contact__link {
+  @include inuit-font-size(16px);
+  @include media-query(lap) {
+    @include inuit-font-size(14px);
+  }
+  @include media-query(desk) {
+    @include inuit-font-size(16px);
+  }
+  padding: 6px;
+  display: inline-block;
+  color: $color-black;
+  float: right;
+  span {
+    display:none;
+    @include media-query(lap-and-up) {
+      display: inline;
+    }
+  }
+}
+
+.contact__link--tel,
+.contact__link--email {
+  color: $color-black;
+  @include media-query(palm)
+  {
+    display:none;
+  }
+}
+
+.contact__link--funding-request {
+  float:right;
+}
+
+.menu-toggle {
+  float: right;
+  background: transparent;
+  transition: margin 0.3s ease;
+  @include media-query(lap-and-up) {
+    display: none;
+  }
+}
+.menu-toggle--open {
+  margin-right: -$inuit-base-spacing-unit--small;
+}
+.menu-toggle__button {
+  position: relative;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  padding: $inuit-base-spacing-unit--tiny;
+}
+.menu-toggle__icon--bar {
+  background-color: $color-brand;
+  display: block;
+  width: 24px;
+  height: 3px;
+  border-radius: $base-round
+}
+.menu-toggle__icon--bar + .menu-toggle__icon--bar {
+  margin-top: 4px;
+}

@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #MEDIA
+\*------------------------------------*/
+
+.slide {
+  color: $color-white;
+  background-color: $brand-color;
+}
+
+.slide__content {
+  padding: $inuit-base-spacing-unit;
+  @include media-query(desk)
+  {
+    padding: $inuit-base-spacing-unit--large;
+
+  }
+}
+
+.slide__title {
+  color: $color-white;
+  font-weight:600;
+  @include media-query(lap)
+  {
+    @include inuit-font-size(24px);
+  }
+}

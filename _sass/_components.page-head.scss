@@ -1,0 +1,9 @@
+/*------------------------------------*\
+    #PAGE-HEAD
+\*------------------------------------*/
+.page-header {
+  background-color: $color-white;
+  @include media-query(palm) {
+    border-bottom: 6px solid $color-brand;
+  }
+}

@@ -1,0 +1,33 @@
+---
+layout: default
+class: home
+---
+<section class="hero">
+<div class="layout layout--large">
+  <div class="layout__item u-1/2-lap-and-up">
+    <div class="lap-p+ desk-p++ desk-ml++ palm-p">
+    <h1>Kitchen Carpentry Specialists</h1>
+    <p>Welcome to KCS. We are an experienced team who between us have 30 years in the trade</p>
+  </div>
+  </div><!--
+--><div class="layout__item u-1/2-lap-and-up">
+<div class="hero__image" style="background-image: url('/images/IMG-20160901-WA0013.jpg');background-position:81%;background-size:cover;height:100%;width:100%" />
+  </div>
+</div>
+</section>
+
+<div class="home">
+  <h1 class="page-heading">Posts</h1>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>
