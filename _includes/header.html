@@ -1,16 +1,18 @@
-<header class="clearfix desk-ph++">
+<header class="clearfix palm-mb lap-and-up-mb+ palm-p lap-and-up-p+">
+
   <a href="/">
     <span class="logo">
       KCS
     </span>
   </a>
+
   <a class="contact__link" href="tel:07890651886">
     <svg class="icon icon-phone">
       <use xlink:href="#icon-phone"></use>
     </svg>
     07890 651886
   </a>
-  <nav class="clear lap-and-up-mb palm-mb-">
+  <nav class="clear">
     {% for my_page in site.pages %}
       {% if my_page.title %}
       <a class="" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>

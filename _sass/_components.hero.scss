@@ -1,23 +1,36 @@
 .hero {
-  position: relative;
+
+  /* Mobile first...*/
+
+  @include media-query(lap-and-up) {
+    display: flex;
+    height: 60vh;
+    flex-direction: row;
+
+  }
+
+
+
 }
 
 .hero__image {
+  background-size:cover;
+  height: 300px;
+  background-position: center;
 
+  @include media-query(lap-and-up) {
+    width: 50%;
+    height: 100%;
+  }
 }
 
 .hero__content {
 
-  background-color: rgba(0,0,0,1);
-
+  // @include inuit-font-size(24px);
   @include media-query(lap-and-up) {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.6);
+    width: 50%;
+    align-items: center;
   }
-
-
 }
 
 .hero__title {
@@ -26,14 +39,5 @@
   margin:0;
   @include media-query(palm) {
     @include inuit-font-size(24px);
-  }
-}
-
-.homepage-intro {
-  background-color: $color-brand;
-  color:$color-white;
-  a {
-    color:$color-white;
-    font-weight:bold;
   }
 }
