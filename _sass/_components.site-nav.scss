@@ -1,64 +1,33 @@
-/*------------------------------------*\
+ /*------------------------------------*\
     #SITE-NAV
 \*------------------------------------*/
 .logo {
-  position:relative;
-  @include inuit-font-size(36px);
 
 }
 
-.logo__img {
-  position:absolute;
-  left:72px;
-  top: 0;
-  height: 60px;
+.logo__image {
+  height: 48px;
 
   @include media-query(lap) {
-    left:96px;
-    height:60px;
-    top:0px;
   }
 
   @include media-query(desk) {
-    left:110px;
-    height:72px;
-    top:-6px;
   }
 }
 
-.sitename {
-
-  font-weight: bold;
-  display:inline-block;
-  color: $color-black;
-
-
-  @include inuit-font-size(16px, 2);
-
-  @include media-query(lap) {
-    @include inuit-font-size(20px, 1.5);
-  }
-
-  @include media-query(desk) {
-    @include inuit-font-size(24px, 1.5);
-  }
-
-}
-
-
-header {
+.header {
 	/* background: #f5f5f5; */
 	/* background: -moz-linear-gradient(top,#fafafa,#f5f5f5); */
 	/* background: -webkit-linear-gradient(top,#fafafa,#f5f5f5); */
 	/* background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fafafa),color-stop(1,#f5f5f5)); */
 	background: linear-gradient(#fafafa,#f5f5f5);
-
 	border-bottom: 1px solid #eee;
 	color: #444;
 }
+
 header nav {
 
-  display:none;
+  display:block;
 
   @include media-query(lap-and-up) {
     float:right;
@@ -68,15 +37,17 @@ header nav {
 }
 
 .site-nav__link {
-  @include inuit-font-size(12px);
+
+  display:none;
+
   @include media-query(lap) {
     @include inuit-font-size(14px);
   }
+
   @include media-query(desk) {
     @include inuit-font-size(16px);
   }
 
-  display:none;
   color: $color-black;
   padding: $inuit-base-spacing-unit--small $inuit-base-spacing-unit--small 8px ;
   border-bottom:4px solid transparent;
@@ -90,7 +61,7 @@ header nav {
   }
 }
 
-.site-nav__link--active {
+.about nav .about, .services nav .services, .portfolio nav .portfolio, .contact nav .contact {
   text-decoration: none;
   border-bottom:3px solid $color-brand;
 }
