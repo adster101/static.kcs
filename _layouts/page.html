@@ -1,12 +1,26 @@
 ---
 layout: default
 ---
-<article class="post desk-ph++ lap-ph+ palm-ph">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-    {{ content }}
-
-</article>
+<div class="post desk-ph++ lap-pv lap-ph+ palm-ph">
+  <div class="layout layout--large">
+    <div class="layout__item u-3/5-desk u-3/5-lap">
+      <article class="post">
+        <header class="post-header">
+          <h1 class="post-title">{{ page.title }}</h1>
+        </header>
+        {{ content }}
+      </article>
+    </div><!--
+--><div class="layout__item u-2/5-desk u-2/5-lap">
+      <aside>
+        <header>
+          <h2>Recent projects</h2>
+        </header>
+        <article>
+          Blah
+        </article>
+      </aside>
+    </div>
+  </div>
+</div>
+{% include testimonial.html %}

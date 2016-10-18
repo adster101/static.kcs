@@ -1,11 +1,11 @@
 ---
 layout: default
 class: home
-title: Kitchen Fitting | Carprenty | Building Services | KCS 
+title: Kitchen Fitting | Carprenty | Building Services | KCS
 ---
 <section class="hero layout layout--flush palm-mb lap-mb desk-mb+">
   <div class="layout__item u-1/2-lap-and-up">
-    <div class="hero__content desk-p++ lap-p+ palm-p">
+    <div class="hero__content desk-p++ lap-p+ palm-p- palm-ph">
       <h1 class="hero__title">Welcome to KCS</h1>
       <p>We are a specialist kitchen and carpentry company that deal with many residential and commercial projects all over the Kent area. We also offer construction and home improvement services.</p>
       <p><a href="/contact-us" class="">Read more about KCS ></a></p>
@@ -16,19 +16,3 @@ title: Kitchen Fitting | Carprenty | Building Services | KCS
     </div>
   </div>
 </section>
-
-<div class="desk-ph++ lap-ph+ palm-ph">
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% assign posts = site.posts | sort:"order" %}
-    {% for post in posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</div>

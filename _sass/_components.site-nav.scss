@@ -27,26 +27,18 @@
 
 header nav {
 
-  display:block;
+  display:none;
 
   @include media-query(lap-and-up) {
     float:right;
     display:block;
   }
-
 }
 
 .site-nav__link {
 
-  display:none;
+  display:block;
 
-  @include media-query(lap) {
-    @include inuit-font-size(14px);
-  }
-
-  @include media-query(desk) {
-    @include inuit-font-size(16px);
-  }
 
   color: $color-black;
   padding: $inuit-base-spacing-unit--small $inuit-base-spacing-unit--small 8px ;
@@ -66,14 +58,7 @@ header nav {
   border-bottom:3px solid $color-brand;
 }
 
-.contact {
-  color: $color-black;
-  a {
-    &:hover {
-      text-decoration:none;
-    }
-  }
-}
+
 
 .contact__link {
   @include inuit-font-size(16px);
