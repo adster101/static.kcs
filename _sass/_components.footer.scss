@@ -1,4 +1,12 @@
 footer {
-  background-color: $color-gray;
-  color: $color-gray-light;
+  background-color: $color-black;
+  color: $color-highlight;
+  text-align: right;
+  a {
+    color: $color-highlight;
+    text-decoration: none;
+    
+
+  }
+
 }

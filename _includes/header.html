@@ -1,4 +1,4 @@
-<header class="header clearfix palm-p- palm-ph lap-p lap-ph+ desk-p desk-ph++">
+<header class="header clearfix palm-p lap-p lap-ph+ desk-p desk-ph++">
   <a href="/" class="logo">
     <img class="logo__image" src="/css/images/logo.svg" alt="Kitchen Carpentry Specialists Company Logo" title="KCS Homepage" />
   </a>
@@ -10,14 +10,12 @@
       Menu
     </button>
   </div>
-  <nav class="clear">
+  <nav class="clear" id="main-menu">
     {% assign pages = site.pages | sort:"order" %}
     {% for my_page in pages %}
       {% if my_page.title %}
         <a class="{{ my_page.anchor-class }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
       {% endif %}
     {% endfor %}
-
   </nav>
-
 </header>

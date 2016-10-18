@@ -1,5 +1,5 @@
 ---
-title: About KCS
+title: About
 page-class: about
 anchor-class: about site-nav__link
 layout: page
@@ -8,7 +8,7 @@ order: 1
 
 KCS is a new up and coming business first established in December 2015.
 
-Mainly focusing on kitchens with great success to begin with we soon branched out into all areas of building and carpentry work from floring and tiling to conservatories and extensions.
+Mainly focusing on [kitchens](/portfolio/kitchens) with great success to begin with we soon branched out into all areas of building and carpentry work from floring and tiling to conservatories and extensions.
 
 We have and work with a good mixture of fully qualified tradesmen who are polite, punctual and precise.
 

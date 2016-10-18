@@ -1,12 +1,21 @@
 .hero {
+  background-color: $color-gray-ui;
+  position: relative;
 
-  /* Mobile first...*/
-  background: $color-gray-light;
-
-
-
+  &:before {
+      box-shadow: inset 0 10px 10px -6px rgba(0,0,0,.3);
+      content: '';
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+  }
 
 }
+
 
 .hero__image {
   background-size:cover;
@@ -14,23 +23,32 @@
   background-position: center;
 
   @include media-query(lap) {
-    height: 350px;
+    height: 372px;
   }
   @include media-query(desk) {
-    height: 400px;
+    height: 420px;
   }
 }
 
 .hero__content {
 
+  color: $color-gray-light;
+
+  a {
+    color: $color-gray-light;
+  }
 
 }
 
 .hero__title {
 
+  @include inuit-font-size(24px);
+
+  color: $color-gray-light;
   font-weight: 700;
   margin:0;
-  @include media-query(palm) {
-    @include inuit-font-size(24px);
+
+  @include media-query(lap) {
+    @include inuit-font-size(30px);
   }
 }

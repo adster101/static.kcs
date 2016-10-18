@@ -3,11 +3,11 @@
 \*------------------------------------*/
 
 a {
-    text-decoration: none;
-    color: $color-highlight;
+    text-decoration: underline;
+    color: $color-brand;
 
     @include attention() {
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 

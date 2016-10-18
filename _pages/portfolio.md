@@ -6,7 +6,7 @@ layout: page
 order: 3
 ---
 
-Check out our most recent jobs. 
+Check out our most recent jobs. They're wicked, innit! Woot!
 
   <ul class="post-list">
     {% assign posts = site.posts %}
