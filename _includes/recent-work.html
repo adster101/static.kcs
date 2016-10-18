@@ -1,0 +1,21 @@
+<header>
+  <h3 class="">Some of our recent work</h3>
+</header>
+
+  {% assign posts = site.posts %}
+  {% for post in posts %}
+    <h4 class="palm-mb0 lap-and-up-mb0">
+      {{ post.title | escape }}
+    </h4>
+    <ul class="list-inline list-inline--delimited">
+      <li>
+        <a href="#">{{ post.categories }}</a>
+      </li>
+      <li>
+        <span class="small">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </span>
+      </li>
+    </ul>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+  {% endfor %}

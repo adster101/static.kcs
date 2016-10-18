@@ -1,11 +1,25 @@
 
 .btn--menu {
-  background-color: transparent;
-  border-color: $color-gray;
-  color:inherit;
+  background: none;
+  border: none;
+  color:transparent;
+  padding: 6px 12px;
   @include attention() {
-    //background-color: $color-blue;
-    //  border-color: $color-blue;
-    color: inherit;
+    background-color: none;
+    border-color: transparent;
+    color: transparent;
   }
+}
+
+.btn--contact {
+  color: $color-gray-light;
+  background-color: $color-black;
+  text-transform: uppercase;
+  @include attention() {
+    background-color: $color-gray-light;
+    border-color: transparent;
+    color: $color-black;
+  }
+
+
 }

@@ -26,15 +26,19 @@ body {
   background-color: $color-gray-light;
 }
 
-.border-top {
-
+.grey-bg-light {
+  background-color: $color-tint;
 }
 
-ul.pricing > li {
-  border-bottom: dotted 1px;
+.border-top-grey {
+  border-top:1px solid $color-gray-ui;
 }
 
-ul.pricing > li > span {
-  float: right;
-  font-weight: 700;
+.border-top-light-grey {
+  border-top:1px solid $color-gray-light;
+}
+
+.gradient-light-grey {
+  background: -webkit-gradient(linear,left top,left  bottom,color-stop(0,#fafafa),color-stop(1,#f5f5f5));
+	background: linear-gradient($color-tint, $color-white);
 }

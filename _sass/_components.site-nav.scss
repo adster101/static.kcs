@@ -19,11 +19,11 @@
 	/* background: #f5f5f5; */
 	/* background: -moz-linear-gradient(top,#fafafa,#f5f5f5); */
 	/* background: -webkit-linear-gradient(top,#fafafa,#f5f5f5); */
-	/* background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fafafa),color-stop(1,#f5f5f5)); */
   /*border-bottom: 1px solid #eee;*/
 
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fafafa),color-stop(1,#f5f5f5));
 	background: linear-gradient(#fafafa,#f5f5f5);
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -46,8 +46,8 @@ header nav {
   text-transform: uppercase;
   text-decoration: none;
   display:block;
-  padding: $inuit-base-spacing-unit--small $inuit-base-spacing-unit--small;
-  position: relative;
+  padding: $inuit-base-spacing-unit--small $inuit-base-spacing-unit--small 9px $inuit-base-spacing-unit--small;
+
   vertical-align: middle;
 
   //color: $color-black;
@@ -56,28 +56,13 @@ header nav {
   @include media-query(desk) {
 
   }
-
   @include media-query(lap-and-up) {
 
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 4px;
-      background: #bdc1c4;
-      width: 100%;
-      -webkit-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
-      -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-      transform: scaleX(0);
-    }
+    border-bottom:3px solid transparent;
 
-    &:hover::before {
-        -webkit-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        transform: scaleX(1);
+    &:hover, &:active,  {
+      text-decoration: none;
+      border-bottom:3px solid $color-brand;
     }
 
   }
@@ -92,49 +77,8 @@ header nav {
 @include media-query(lap-and-up) {
   .about nav .about, .services nav .services, .portfolio nav .portfolio {
     text-decoration: none;
+    border-bottom:3px solid $color-brand;
   }
-}
-
-.contact {
-  color: $color-black;
-  a {
-    &:hover {
-      text-decoration:none;
-    }
-  }
-}
-
-.contact__link {
-  @include inuit-font-size(16px);
-  @include media-query(lap) {
-    @include inuit-font-size(14px);
-  }
-  @include media-query(desk) {
-    @include inuit-font-size(16px);
-  }
-  padding: 6px;
-  display: inline-block;
-  color: $color-black;
-  float: right;
-  span {
-    display:none;
-    @include media-query(lap-and-up) {
-      display: inline;
-    }
-  }
-}
-
-.contact__link--tel,
-.contact__link--email {
-  color: $color-black;
-  @include media-query(palm)
-  {
-    display:none;
-  }
-}
-
-.contact__link--funding-request {
-  float:right;
 }
 
 .menu-toggle {
