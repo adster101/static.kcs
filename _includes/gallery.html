@@ -1,5 +1,10 @@
 {% for image in site.static_files %}
-    {% if image.path contains include.directory %}
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-    {% endif %}
+  {% if image.path contains include.directory %}
+    <figure>
+      <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+      <figcaption>
+        {{ image.path }}
+      </figcaption>
+    </figure>
+  {% endif %}
 {% endfor %}

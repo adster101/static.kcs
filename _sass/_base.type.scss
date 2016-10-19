@@ -13,30 +13,6 @@
   letter-spacing: -.0625rem;
   color: $color-black;
 }
-/**
- * A generic inverted heading style which can be applied to any headings.
- */
-.block-heading {
-  margin: 0;
-  padding: quarter($inuit-base-spacing-unit) quarter($inuit-base-spacing-unit) quarter($inuit-base-spacing-unit) $inuit-base-spacing-unit--small;
-  @include inuit-font-size(16px);
-  color: #fff;
-  @include media-query(lap-and-up) {
-    //padding-left: $inuit-base-spacing-unit;
-    padding-top: $inuit-base-spacing-unit--small;
-    padding-bottom: $inuit-base-spacing-unit--small;
-    @include inuit-font-size(18px);
-  }
-}
-.block-heading--small, .small {
-  @include inuit-font-size(14px);
-}
-/* Utility to hide stuff on small screen */
-.hidden-palm {
-  @include media-query(palm) {
-    display: none;
-  }
-}
 
 blockquote {
   font-style: italic;
@@ -48,9 +24,7 @@ blockquote {
 
 figcaption {
   @include inuit-font-size(12px,1rem);
-  padding: $inuit-base-spacing-unit--small;
-  background: $color-gray;
-
+  padding: $inuit-base-spacing-unit--small 0;
 }
 
 .tagline {
@@ -67,8 +41,17 @@ figcaption {
   color: $color-white;
 }
 .heading {}
+
 strong {
   color: $color-black;
+}
+
+.post-header {
+  border-bottom: 1px solid $color-gray-light;
+}
+
+.right {
+  float:right;
 }
 
 label {

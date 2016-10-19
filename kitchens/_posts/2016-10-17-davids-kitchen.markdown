@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  David's Kitchen installation
+title:  Kitchen installation
 date:   2016-10-19 12:33:28 +0100
-image:
+image:  /images/davids-kitchen/IMG-20160901-WA0035-675x450.jpg 
 ---
 
 Complete kitchen installation for David.
