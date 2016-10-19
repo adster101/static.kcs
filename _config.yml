@@ -30,7 +30,6 @@ collections:
     layout: default
   posts:
     permalink: /posts/:title
-
 # Build settings
 markdown: kramdown
 # theme: minima
@@ -42,3 +41,4 @@ exclude:
 - package.json
 - node_modules
 - wp-content
+- bower_components

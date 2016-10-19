@@ -1,0 +1,12 @@
+<header>
+  <h3 class="palm-mt0 lap-and-up-mt0">Recently completed projects</h3>
+</header>
+
+<div class="layout layout--large">
+  {% assign posts = site.posts %}
+  {% for post in posts %}
+  <div class="layout__item u-1/4-lap-and-up u-1/2-palm">
+    {% include project-block.html %}
+  </div>
+  {% endfor %}
+</div>

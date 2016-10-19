@@ -22,30 +22,18 @@ module.exports = function(grunt) {
       myTask: {
         options: {
           sizes: [{
-            name: 'large',
-            width: 750,
+            width: 675,
+            height: 450,
             quality: 75,
-            aspectRatio: true,
-            gravity: 'Center'
-          },{
-            name: 'medium',
-            width: 350,
-            quality: 75,
-            aspectRatio: true,
-            gravity: 'Center'
-          },{
-            name: 'small',
-            width: 250,
-            quality: 75,
-            aspectRatio: true,
+            aspectRatio: false,
             gravity: 'Center'
           }]
         },
         files: [{
           expand: true,
-          src: ['images/portfolio/**.{JPG,jpg,gif,png,jpeg}'],
-          cwd: '/home/adam/public_html/static.kcs/',
-          dest: 'images/portfolio/resp'
+          cwd: 'images/portfolio/', // Defines the 'base path' to the images relative to where the gruntfile is
+          src: ['**.{JPG,jpg,gif,png,jpeg}'], //
+          dest: 'images/portfolio/profiles/'
         }]
       }
     }
