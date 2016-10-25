@@ -8,9 +8,9 @@
  * Headings 1–6.
  */
 @include headings() {
-  font-weight: 400;
-  letter-spacing: -1px;
-  letter-spacing: -.0625rem;
+  //font-weight: 400;
+  //letter-spacing: -1px;
+  //letter-spacing: -.0625rem;
   color: $color-black;
 }
 
@@ -47,11 +47,15 @@ strong {
 }
 
 .post-header {
-  border-bottom: 1px solid $color-gray-light;
+  border-bottom: 1px solid lighten($color-gray-light,10%);
 }
 
 .right {
   float:right;
+}
+
+.center {
+  text-align: center;
 }
 
 label {

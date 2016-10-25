@@ -47,17 +47,16 @@ header nav {
   text-decoration: none;
   display:block;
   padding: $inuit-base-spacing-unit--small $inuit-base-spacing-unit--small 9px $inuit-base-spacing-unit--small;
-
+  margin-bottom: $inuit-base-spacing-unit--small;
   vertical-align: middle;
 
-  //color: $color-black;
-
-
-  @include media-query(desk) {
-
+  @include media-query(palm) {
+    @include attention() {
+      
+    }
   }
   @include media-query(lap-and-up) {
-
+    margin-bottom: inherit;
     border-bottom:3px solid transparent;
 
     &:hover, &:active,  {

@@ -15,11 +15,15 @@
   color: $color-gray-light;
   background-color: $color-black;
   text-transform: uppercase;
+  display: block;
   @include attention() {
     background-color: $color-gray-light;
     border-color: transparent;
     color: $color-black;
   }
 
+  @include media-query(lap-and-up) {
+    display:inline-block;
+  }
 
 }
