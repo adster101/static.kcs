@@ -42,3 +42,5 @@ exclude:
 - node_modules
 - wp-content
 - bower_components
+sass:
+    style: compressed

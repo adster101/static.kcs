@@ -1,6 +1,18 @@
 /*------------------------------------*\
     #TYPE
 \*------------------------------------*/
+
+fieldset {
+  border:none;
+  padding:0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+  margin-bottom: $inuit-base-spacing-unit;
+}
+
 /**
  * Typographical base selectors.
  */
@@ -14,12 +26,32 @@
   color: $color-black;
 }
 
-blockquote {
+blockquote.testimonial {
+  font-weight: 400;
   font-style: italic;
-  padding: 0.809em 2.427em;
-  margin-left: 0;
-  border-left: 4px solid $color-gray;
   color: $color-black;
+  text-align: center;
+  margin: 0 auto;
+  padding: $inuit-base-spacing-unit--small;
+
+  @include media-query(lap) {
+    max-width: 60%;
+    padding: $inuit-base-spacing-unit;
+  }
+
+  @include media-query(desk) {
+    max-width: 60%;
+    padding: $inuit-base-spacing-unit--large;
+    @include inuit-font-size(21px,2rem);
+  }
+
+
+  > footer {
+    background-color: inherit;
+    font-style: normal;
+    font-weight: bold;
+    color: $color-black;
+  }
 }
 
 figcaption {
@@ -68,4 +100,8 @@ input, textarea, select{
   margin-bottom: $inuit-base-spacing-unit;
   width: 100%;
 
+}
+
+.small {
+  @include inuit-font-size(13px);
 }
